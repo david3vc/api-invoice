@@ -1,0 +1,12 @@
+D:\Nueva carpeta\FrontendMentor\proyecto8\codigo fuente\backend\INVOICECRUD\Domain\bin\Release\net6.0\Domain.deps.json
+D:\Nueva carpeta\FrontendMentor\proyecto8\codigo fuente\backend\INVOICECRUD\Domain\bin\Release\net6.0\Domain.dll
+D:\Nueva carpeta\FrontendMentor\proyecto8\codigo fuente\backend\INVOICECRUD\Domain\bin\Release\net6.0\Domain.pdb
+D:\Nueva carpeta\FrontendMentor\proyecto8\codigo fuente\backend\INVOICECRUD\Domain\obj\Release\net6.0\Domain.csproj.AssemblyReference.cache
+D:\Nueva carpeta\FrontendMentor\proyecto8\codigo fuente\backend\INVOICECRUD\Domain\obj\Release\net6.0\Domain.GeneratedMSBuildEditorConfig.editorconfig
+D:\Nueva carpeta\FrontendMentor\proyecto8\codigo fuente\backend\INVOICECRUD\Domain\obj\Release\net6.0\Domain.AssemblyInfoInputs.cache
+D:\Nueva carpeta\FrontendMentor\proyecto8\codigo fuente\backend\INVOICECRUD\Domain\obj\Release\net6.0\Domain.AssemblyInfo.cs
+D:\Nueva carpeta\FrontendMentor\proyecto8\codigo fuente\backend\INVOICECRUD\Domain\obj\Release\net6.0\Domain.csproj.CoreCompileInputs.cache
+D:\Nueva carpeta\FrontendMentor\proyecto8\codigo fuente\backend\INVOICECRUD\Domain\obj\Release\net6.0\Domain.dll
+D:\Nueva carpeta\FrontendMentor\proyecto8\codigo fuente\backend\INVOICECRUD\Domain\obj\Release\net6.0\refint\Domain.dll
+D:\Nueva carpeta\FrontendMentor\proyecto8\codigo fuente\backend\INVOICECRUD\Domain\obj\Release\net6.0\Domain.pdb
+D:\Nueva carpeta\FrontendMentor\proyecto8\codigo fuente\backend\INVOICECRUD\Domain\obj\Release\net6.0\ref\Domain.dll
