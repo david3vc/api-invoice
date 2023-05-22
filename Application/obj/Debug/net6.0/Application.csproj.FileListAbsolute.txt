@@ -1,10 +1,12 @@
 D:\Nueva carpeta\FrontendMentor\proyecto8\codigo fuente\backend\INVOICECRUD\Application\bin\Debug\net6.0\Application.deps.json
 D:\Nueva carpeta\FrontendMentor\proyecto8\codigo fuente\backend\INVOICECRUD\Application\bin\Debug\net6.0\Application.dll
 D:\Nueva carpeta\FrontendMentor\proyecto8\codigo fuente\backend\INVOICECRUD\Application\bin\Debug\net6.0\Application.pdb
+D:\Nueva carpeta\FrontendMentor\proyecto8\codigo fuente\backend\INVOICECRUD\Application\bin\Debug\net6.0\Core.dll
 D:\Nueva carpeta\FrontendMentor\proyecto8\codigo fuente\backend\INVOICECRUD\Application\bin\Debug\net6.0\Domain.dll
 D:\Nueva carpeta\FrontendMentor\proyecto8\codigo fuente\backend\INVOICECRUD\Application\bin\Debug\net6.0\Infraestructure.dll
 D:\Nueva carpeta\FrontendMentor\proyecto8\codigo fuente\backend\INVOICECRUD\Application\bin\Debug\net6.0\Domain.pdb
 D:\Nueva carpeta\FrontendMentor\proyecto8\codigo fuente\backend\INVOICECRUD\Application\bin\Debug\net6.0\Infraestructure.pdb
+D:\Nueva carpeta\FrontendMentor\proyecto8\codigo fuente\backend\INVOICECRUD\Application\bin\Debug\net6.0\Core.pdb
 D:\Nueva carpeta\FrontendMentor\proyecto8\codigo fuente\backend\INVOICECRUD\Application\obj\Debug\net6.0\Application.csproj.AssemblyReference.cache
 D:\Nueva carpeta\FrontendMentor\proyecto8\codigo fuente\backend\INVOICECRUD\Application\obj\Debug\net6.0\Application.GeneratedMSBuildEditorConfig.editorconfig
 D:\Nueva carpeta\FrontendMentor\proyecto8\codigo fuente\backend\INVOICECRUD\Application\obj\Debug\net6.0\Application.AssemblyInfoInputs.cache

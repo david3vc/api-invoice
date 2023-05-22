@@ -28,6 +28,7 @@ namespace Infraestructure.ModelMaps
             builder.HasOne(f => f.InvoiceStatus).WithMany(g => g.Invoices).HasForeignKey(f => f.Id);
             builder.HasOne(f => f.PaymentTerm).WithMany(g => g.Invoices).HasForeignKey(f => f.Id);
             builder.HasOne(f => f.Subject).WithMany(g => g.Invoices).HasForeignKey(f => f.Id);
+            builder.HasOne(f => f.Usuario).WithMany(g => g.Invoices).HasForeignKey(f => f.Id);
         }
     }
 }

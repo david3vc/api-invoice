@@ -1,7 +1,9 @@
 D:\Nueva carpeta\FrontendMentor\proyecto8\codigo fuente\backend\INVOICECRUD\Infraestructure\bin\Debug\net6.0\Infraestructure.deps.json
 D:\Nueva carpeta\FrontendMentor\proyecto8\codigo fuente\backend\INVOICECRUD\Infraestructure\bin\Debug\net6.0\Infraestructure.dll
 D:\Nueva carpeta\FrontendMentor\proyecto8\codigo fuente\backend\INVOICECRUD\Infraestructure\bin\Debug\net6.0\Infraestructure.pdb
+D:\Nueva carpeta\FrontendMentor\proyecto8\codigo fuente\backend\INVOICECRUD\Infraestructure\bin\Debug\net6.0\Core.dll
 D:\Nueva carpeta\FrontendMentor\proyecto8\codigo fuente\backend\INVOICECRUD\Infraestructure\bin\Debug\net6.0\Domain.dll
+D:\Nueva carpeta\FrontendMentor\proyecto8\codigo fuente\backend\INVOICECRUD\Infraestructure\bin\Debug\net6.0\Core.pdb
 D:\Nueva carpeta\FrontendMentor\proyecto8\codigo fuente\backend\INVOICECRUD\Infraestructure\bin\Debug\net6.0\Domain.pdb
 D:\Nueva carpeta\FrontendMentor\proyecto8\codigo fuente\backend\INVOICECRUD\Infraestructure\obj\Debug\net6.0\Infraestructure.csproj.AssemblyReference.cache
 D:\Nueva carpeta\FrontendMentor\proyecto8\codigo fuente\backend\INVOICECRUD\Infraestructure\obj\Debug\net6.0\Infraestructure.GeneratedMSBuildEditorConfig.editorconfig

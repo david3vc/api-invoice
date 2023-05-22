@@ -1,12 +1,11 @@
 {
   "ExpandedNodes": [
     "",
-    "\\Application",
-    "\\Domain",
     "\\Infraestructure",
     "\\Infraestructure\\ModelMaps",
-    "\\INVOICECRUD"
+    "\\Infraestructure\\Repositories",
+    "\\Infraestructure\\Repositories\\Implementations"
   ],
-  "SelectedNode": "\\INVOICECRUD.sln",
+  "SelectedNode": "\\Infraestructure\\Repositories\\Implementations\\UsuarioRepository.cs",
   "PreviewInSolutionExplorer": false
 }

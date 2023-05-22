@@ -21,5 +21,6 @@ namespace Domain
         public virtual InvoiceStatus? InvoiceStatus { get; set; }
         public virtual PaymentTerm? PaymentTerm { get; set; }
         public virtual Subject? Subject { get; set; }
+        public virtual Usuario? Usuario { get; set; }
 }
 }
