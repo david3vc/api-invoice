@@ -58,6 +58,7 @@ namespace Infraestructure.Repositories.Implementations
                 model.Quantity = entity.Quantity;
                 model.Price = entity.Price;
                 model.Total = entity.Total;
+                model.IdInvoice = entity.IdInvoice;
 
                 _context.InvoiceItems.Update(model);
                 await _context.SaveChangesAsync();

@@ -13,3 +13,5 @@ D:\Nueva carpeta\FrontendMentor\proyecto8\codigo fuente\backend\INVOICECRUD\Infr
 D:\Nueva carpeta\FrontendMentor\proyecto8\codigo fuente\backend\INVOICECRUD\Infraestructure\obj\Release\net6.0\refint\Infraestructure.dll
 D:\Nueva carpeta\FrontendMentor\proyecto8\codigo fuente\backend\INVOICECRUD\Infraestructure\obj\Release\net6.0\Infraestructure.pdb
 D:\Nueva carpeta\FrontendMentor\proyecto8\codigo fuente\backend\INVOICECRUD\Infraestructure\obj\Release\net6.0\ref\Infraestructure.dll
+D:\Nueva carpeta\FrontendMentor\proyecto8\codigo fuente\backend\INVOICECRUD\Infraestructure\bin\Release\net6.0\Core.dll
+D:\Nueva carpeta\FrontendMentor\proyecto8\codigo fuente\backend\INVOICECRUD\Infraestructure\bin\Release\net6.0\Core.pdb

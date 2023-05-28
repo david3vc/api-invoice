@@ -43,10 +43,29 @@ namespace Infraestructure.Repositories.Implementations
         }
 
         public async Task<Invoice?> Find(int id)
-            => await _context.Invoices.FindAsync(id);
+            => await _context.Invoices.Include(f => f.InvoiceStatus)
+                                      .Include(f => f.InvoiceItems)
+                                      .Include(f => f.Subject)
+                                      .Include(f => f.PaymentTerm)
+                                      .Where(f => f.Id == id).FirstOrDefaultAsync();
 
         public async Task<IList<Invoice>> FindAll()
             => await _context.Invoices.Where(f => f.Status == 1).ToListAsync();
+
+        public async Task<List<Invoice>> ListarInvoicesPorUsuario(int? idUsuario, int? status)
+        {
+            var response = await _context.Invoices
+                .Include(f => f.InvoiceStatus)
+                                                            .Include(f => f.InvoiceItems)
+                                                                                  .Include(f => f.Subject)
+                                                                                  .Include(f => f.InvoiceIssuer)
+                                                            .Include(f => f.PaymentTerm)
+                                      .Where(f => (!idUsuario.HasValue || f.IdUsuario == idUsuario)
+                                                   && (!status.HasValue || f.Status == status))
+                                      .ToListAsync();
+
+            return response;
+        }
 
         public async Task<Invoice?> Update(Invoice entity)
         {
@@ -59,7 +78,7 @@ namespace Infraestructure.Repositories.Implementations
                 model.IdPaymentTerm = entity.IdPaymentTerm;
                 model.IdInvoiceStatus = entity.IdInvoiceStatus;
                 model.IdSubject = entity.IdSubject;
-                model.IdInvoiceItem = entity.IdInvoiceItem;
+                model.IdInvoiceIssuer = entity.IdInvoiceIssuer;
 
                 _context.Invoices.Update(model);
                 await _context.SaveChangesAsync();

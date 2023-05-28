@@ -8,5 +8,8 @@ using System.Threading.Tasks;
 
 namespace Application.Services.Abstractions
 {
-    public interface IInvoiceService : IServiceCrud<InvoiceDto, InvoiceFormDto, int> { }
+    public interface IInvoiceService : IServiceCrud<InvoiceDto, InvoiceFormDto, int> 
+    {
+        Task<List<InvoiceDto>> ListarInvoicesPorUsuario(int? idUsuario, int? status);
+    }
 }

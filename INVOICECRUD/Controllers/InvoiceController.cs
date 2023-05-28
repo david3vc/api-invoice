@@ -43,6 +43,18 @@ namespace INVOICECRUD.Controllers
             return response;
         }
 
+        [HttpPost("ListarInvoicesPorUsuario")]
+        [ProducesResponseType(StatusCodes.Status200OK, Type = typeof(InvoiceDto))]
+        [ProducesResponseType(StatusCodes.Status400BadRequest)]
+        public async Task<List<InvoiceDto>> ListarInvoicesPorUsuario([FromBody] InvoicePeticionDto request)
+        {
+            var response = await _invoiceService.ListarInvoicesPorUsuario(request.IdUsuario, request.Status);
+
+            if (response == null) throw new Exception("Error");
+
+            return response;
+        }
+
         [HttpPut("{id}")]
         [ProducesResponseType(StatusCodes.Status200OK, Type = typeof(InvoiceDto))]
         [ProducesResponseType(StatusCodes.Status400BadRequest)]

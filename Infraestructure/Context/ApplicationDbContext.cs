@@ -33,6 +33,7 @@ namespace Infraestructure.Context
         public DbSet<Subject> Subjects { get; set; }
         public DbSet<Invoice> Invoices { get; set; }
         public DbSet<Usuario> Usuarios { get; set; }
+        public DbSet<InvoiceIssuer> InvoiceIssuers { get; set; }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
@@ -44,6 +45,7 @@ namespace Infraestructure.Context
             modelBuilder.ApplyConfiguration(new SubjectMap());
             modelBuilder.ApplyConfiguration(new InvoiceMap());
             modelBuilder.ApplyConfiguration(new UsuarioMap());
+            modelBuilder.ApplyConfiguration(new InvoiceIssuerMap());
         }
     }
 }

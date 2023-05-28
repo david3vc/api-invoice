@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Domain;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -14,7 +15,14 @@ namespace Application.Dtos
         public int? IdPaymentTerm { get; set; }
         public int? IdInvoiceStatus { get; set; }
         public int? IdSubject { get; set; }
-        public int? IdInvoiceItem { get; set; }
+        public int? IdInvoiceIssuer { get; set; }
+        public int? IdUsuario { get; set; }
         public int Status { get; set; }
+
+        public InvoiceStatusDto? InvoiceStatus { get; set; }
+        public PaymentTermDto? PaymentTerm { get; set; }
+        public SubjectDto? Subject { get; set; }
+        public InvoiceIssuerFormDto? InvoiceIssuer { get; set; }
+        public List<InvoiceItemDto>? InvoiceItems { get; set; }
     }
 }

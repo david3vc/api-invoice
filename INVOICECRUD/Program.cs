@@ -105,13 +105,13 @@ app.UseSwagger();
 app.UseSwaggerUI();
 
 ////app.UseHttpsRedirection();
-//app.UseCors(options =>
-//{
-//    options.AllowAnyHeader()
-//    .AllowAnyOrigin()
-//    .AllowAnyMethod()
-//    .Build();
-//});
+app.UseCors(options =>
+{
+    options.AllowAnyHeader()
+    .AllowAnyOrigin()
+    .AllowAnyMethod()
+    .Build();
+});
 
 app.UseAuthorization();
 

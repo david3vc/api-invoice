@@ -9,6 +9,7 @@ namespace Application.Dtos
 {
     public class UsuarioResponseDto
     {
+        public int Id { get; set; }
         public string? Email { get; set; }
         public int? Status { get; set; }
         public SecurityEntity? Security { get; set; }

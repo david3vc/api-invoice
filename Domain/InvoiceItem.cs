@@ -14,7 +14,8 @@ namespace Domain
         public decimal? Price { get; set; }
         public decimal? Total { get; set; }
         public int Status { get; set; } = 1;
+        public int? IdInvoice { get; set; }
 
-        public virtual ICollection<Invoice>? Invoices { get; set; }
+        public virtual Invoice? Invoice { get; set; }
     }
 }

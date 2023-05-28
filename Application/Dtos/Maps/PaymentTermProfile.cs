@@ -13,6 +13,7 @@ namespace Application.Dtos.Maps
         public PaymentTermProfile()
         {
             CreateMap<PaymentTerm, PaymentTermDto>();
+            CreateMap<PaymentTermDto, PaymentTerm>();
         }
     }
 }

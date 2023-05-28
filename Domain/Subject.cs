@@ -13,7 +13,7 @@ namespace Domain
         public string? Email { get; set; }
         public string? StreetAddress { get; set; }
         public string? City { get; set; }
-        public int? PostCode { get; set; }
+        public string? PostCode { get; set; }
         public string? Country { get; set; }
 
         public virtual ICollection<Invoice>? Invoices { get; set; }

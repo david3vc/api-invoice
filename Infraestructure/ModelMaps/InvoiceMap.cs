@@ -21,14 +21,15 @@ namespace Infraestructure.ModelMaps
             builder.Property(e => e.IdPaymentTerm).HasColumnName("id_payment_term");
             builder.Property(e => e.IdInvoiceStatus).HasColumnName("id_invoice_status");
             builder.Property(e => e.IdSubject).HasColumnName("id_subject");
-            builder.Property(e => e.IdInvoiceItem).HasColumnName("id_invoice_item");
+            builder.Property(e => e.IdUsuario).HasColumnName("id_usuario");
+            builder.Property(e => e.IdInvoiceIssuer).HasColumnName("id_invoice_issuer");
             builder.Property(e => e.Status).HasColumnName("status");
 
-            builder.HasOne(f => f.InvoiceItem).WithMany(g => g.Invoices).HasForeignKey(f => f.Id);
-            builder.HasOne(f => f.InvoiceStatus).WithMany(g => g.Invoices).HasForeignKey(f => f.Id);
-            builder.HasOne(f => f.PaymentTerm).WithMany(g => g.Invoices).HasForeignKey(f => f.Id);
-            builder.HasOne(f => f.Subject).WithMany(g => g.Invoices).HasForeignKey(f => f.Id);
-            builder.HasOne(f => f.Usuario).WithMany(g => g.Invoices).HasForeignKey(f => f.Id);
+            builder.HasOne(f => f.InvoiceStatus).WithMany(g => g.Invoices).HasForeignKey(f => f.IdInvoiceStatus);
+            builder.HasOne(f => f.PaymentTerm).WithMany(g => g.Invoices).HasForeignKey(f => f.IdPaymentTerm);
+            builder.HasOne(f => f.Subject).WithMany(g => g.Invoices).HasForeignKey(f => f.IdSubject);
+            builder.HasOne(f => f.Usuario).WithMany(g => g.Invoices).HasForeignKey(f => f.IdUsuario);
+            builder.HasOne(f => f.InvoiceIssuer).WithMany(g => g.Invoices).HasForeignKey(f => f.IdInvoiceIssuer);
         }
     }
 }

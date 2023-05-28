@@ -21,6 +21,9 @@ namespace Infraestructure.ModelMaps
             builder.Property(e => e.Price).HasColumnName("price");
             builder.Property(e => e.Total).HasColumnName("total");
             builder.Property(e => e.Status).HasColumnName("status");
+            builder.Property(e => e.IdInvoice).HasColumnName("id_invoice");
+
+            builder.HasOne(f => f.Invoice).WithMany(g => g.InvoiceItems).HasForeignKey(f => f.IdInvoice);
         }
     }
 }

@@ -7,21 +7,21 @@ https://go.microsoft.com/fwlink/?LinkID=208121.
     <TimeStampOfAssociatedLegacyPublishXmlFile />
     <EncryptedPassword>AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAfLvIFIfHZE+ADWXvfk+exAAAAAACAAAAAAAQZgAAAAEAACAAAAAGR3uzd93Beje44Ya3O5tqWiZnkcc9VXZUYrXfZHSsdQAAAAAOgAAAAAIAACAAAACJ5wcNhw59i02l769pojL3DEHuQnH2GLSyU9if6LOL9jAAAAA25DBiuQrXoUF1hm28LOzuaSwJDTBKynJHY+ylAlHVeH/aBMvZSVG0iqcgHGG3yllAAAAAZdBH9bEKFRg7f//0QYR++yfRuhnlW1L0lc/O7x8HVaPrmV+dqXea/FvCxZdXqaJBH0ZSgZAXqGnyr6JDApYBtw==</EncryptedPassword>
     <_PublishTargetUrl>ftp://155.254.244.39/www.crudinvoice.somee.com</_PublishTargetUrl>
-    <History>True|2023-05-11T14:35:11.8402218Z;True|2023-05-08T20:31:47.2595103-05:00;False|2023-05-08T20:29:39.0799152-05:00;True|2023-05-08T20:19:39.0910295-05:00;</History>
+    <History>True|2023-05-22T22:44:46.5974330Z;True|2023-05-22T14:22:55.5325364-05:00;True|2023-05-11T09:35:11.8402218-05:00;True|2023-05-08T20:31:47.2595103-05:00;False|2023-05-08T20:29:39.0799152-05:00;True|2023-05-08T20:19:39.0910295-05:00;</History>
     <LastFailureDetails />
   </PropertyGroup>
   <ItemGroup>
     <File Include="Application.dll">
-      <publishTime>05/11/2023 09:31:57</publishTime>
+      <publishTime>05/22/2023 14:19:10</publishTime>
     </File>
     <File Include="Application.pdb">
-      <publishTime>05/11/2023 09:31:57</publishTime>
+      <publishTime>05/22/2023 14:19:10</publishTime>
     </File>
     <File Include="appsettings.Development.json">
       <publishTime>05/08/2023 18:22:41</publishTime>
     </File>
     <File Include="appsettings.json">
-      <publishTime>05/10/2023 09:51:36</publishTime>
+      <publishTime>05/22/2023 12:44:36</publishTime>
     </File>
     <File Include="Autofac.dll">
       <publishTime>11/16/2022 14:23:06</publishTime>
@@ -41,32 +41,47 @@ https://go.microsoft.com/fwlink/?LinkID=208121.
     <File Include="Azure.Identity.dll">
       <publishTime>04/05/2022 15:26:00</publishTime>
     </File>
+    <File Include="Core.dll">
+      <publishTime>05/22/2023 14:19:06</publishTime>
+    </File>
+    <File Include="Core.pdb">
+      <publishTime>05/22/2023 14:19:06</publishTime>
+    </File>
     <File Include="Domain.dll">
-      <publishTime>05/11/2023 09:31:53</publishTime>
+      <publishTime>05/22/2023 14:19:06</publishTime>
     </File>
     <File Include="Domain.pdb">
-      <publishTime>05/11/2023 09:31:53</publishTime>
+      <publishTime>05/22/2023 14:19:06</publishTime>
     </File>
     <File Include="Infraestructure.dll">
-      <publishTime>05/11/2023 09:31:56</publishTime>
+      <publishTime>05/22/2023 14:19:09</publishTime>
     </File>
     <File Include="Infraestructure.pdb">
-      <publishTime>05/11/2023 09:31:56</publishTime>
+      <publishTime>05/22/2023 14:19:09</publishTime>
     </File>
     <File Include="INVOICECRUD.deps.json">
-      <publishTime>05/11/2023 09:32:00</publishTime>
+      <publishTime>05/22/2023 17:41:14</publishTime>
     </File>
     <File Include="INVOICECRUD.dll">
-      <publishTime>05/11/2023 09:31:59</publishTime>
+      <publishTime>05/22/2023 17:41:12</publishTime>
     </File>
     <File Include="INVOICECRUD.exe">
-      <publishTime>05/11/2023 09:31:59</publishTime>
+      <publishTime>05/22/2023 17:41:12</publishTime>
     </File>
     <File Include="INVOICECRUD.pdb">
-      <publishTime>05/11/2023 09:31:59</publishTime>
+      <publishTime>05/22/2023 17:41:12</publishTime>
     </File>
     <File Include="INVOICECRUD.runtimeconfig.json">
-      <publishTime>05/11/2023 09:32:00</publishTime>
+      <publishTime>05/22/2023 14:19:14</publishTime>
+    </File>
+    <File Include="Microsoft.AspNetCore.Authentication.JwtBearer.dll">
+      <publishTime>03/24/2023 15:37:32</publishTime>
+    </File>
+    <File Include="Microsoft.AspNetCore.Cryptography.Internal.dll">
+      <publishTime>12/06/2022 22:40:04</publishTime>
+    </File>
+    <File Include="Microsoft.AspNetCore.Cryptography.KeyDerivation.dll">
+      <publishTime>12/06/2022 22:41:02</publishTime>
     </File>
     <File Include="Microsoft.Bcl.AsyncInterfaces.dll">
       <publishTime>04/14/2020 17:39:12</publishTime>
@@ -100,6 +115,9 @@ https://go.microsoft.com/fwlink/?LinkID=208121.
     </File>
     <File Include="Microsoft.Extensions.DependencyInjection.dll">
       <publishTime>10/18/2022 11:19:34</publishTime>
+    </File>
+    <File Include="Microsoft.Extensions.Identity.Core.dll">
+      <publishTime>12/06/2022 22:41:14</publishTime>
     </File>
     <File Include="Microsoft.Extensions.Logging.Abstractions.dll">
       <publishTime>10/18/2022 11:19:52</publishTime>
@@ -219,7 +237,7 @@ https://go.microsoft.com/fwlink/?LinkID=208121.
       <publishTime>10/19/2020 13:53:38</publishTime>
     </File>
     <File Include="web.config">
-      <publishTime>05/11/2023 09:32:17</publishTime>
+      <publishTime>05/22/2023 17:41:16</publishTime>
     </File>
   </ItemGroup>
 </Project>
