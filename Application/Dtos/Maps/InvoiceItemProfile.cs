@@ -12,7 +12,7 @@ namespace Application.Dtos.Maps
     {
         public InvoiceItemProfile()
         {
-            CreateMap<InvoiceItem, InvoiceItemDto>();
+            CreateMap<InvoiceItem, InvoiceItemDto>().ReverseMap();
         }
     }
 }

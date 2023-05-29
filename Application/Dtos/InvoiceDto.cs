@@ -22,7 +22,7 @@ namespace Application.Dtos
         public InvoiceStatusDto? InvoiceStatus { get; set; }
         public PaymentTermDto? PaymentTerm { get; set; }
         public SubjectDto? Subject { get; set; }
-        public InvoiceIssuerFormDto? InvoiceIssuer { get; set; }
+        public InvoiceIssuerDto? InvoiceIssuer { get; set; }
         public List<InvoiceItemDto>? InvoiceItems { get; set; }
     }
 }

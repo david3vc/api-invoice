@@ -47,6 +47,7 @@ namespace Infraestructure.Repositories.Implementations
                                       .Include(f => f.InvoiceItems)
                                       .Include(f => f.Subject)
                                       .Include(f => f.PaymentTerm)
+                                      .Include(f => f.InvoiceIssuer)
                                       .Where(f => f.Id == id).FirstOrDefaultAsync();
 
         public async Task<IList<Invoice>> FindAll()
@@ -54,15 +55,14 @@ namespace Infraestructure.Repositories.Implementations
 
         public async Task<List<Invoice>> ListarInvoicesPorUsuario(int? idUsuario, int? status)
         {
-            var response = await _context.Invoices
-                .Include(f => f.InvoiceStatus)
-                                                            .Include(f => f.InvoiceItems)
-                                                                                  .Include(f => f.Subject)
-                                                                                  .Include(f => f.InvoiceIssuer)
-                                                            .Include(f => f.PaymentTerm)
-                                      .Where(f => (!idUsuario.HasValue || f.IdUsuario == idUsuario)
-                                                   && (!status.HasValue || f.Status == status))
-                                      .ToListAsync();
+            var response = await _context.Invoices.Include(f => f.InvoiceStatus)
+                                                  .Include(f => f.InvoiceItems)
+                                                  .Include(f => f.Subject)
+                                                  .Include(f => f.InvoiceIssuer)
+                                                  .Include(f => f.PaymentTerm)
+                                                  .Where(f => (!idUsuario.HasValue || f.IdUsuario == idUsuario)
+                                                            && (!status.HasValue || f.Status == status))
+                                                  .ToListAsync();
 
             return response;
         }

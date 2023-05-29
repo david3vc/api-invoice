@@ -12,7 +12,7 @@ namespace Application.Dtos.Maps
     {
         public SubjectProfile()
         {
-            CreateMap<Subject, SubjectDto>();
+            CreateMap<Subject, SubjectDto>().ReverseMap();
         }
     }
 }

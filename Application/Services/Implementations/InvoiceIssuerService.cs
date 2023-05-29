@@ -46,9 +46,12 @@ namespace Application.Services.Implementations
             throw new NotImplementedException();
         }
 
-        public Task<InvoiceIssuerDto?> Update(InvoiceIssuerDto dto)
+        public async Task<InvoiceIssuerDto?> Update(InvoiceIssuerDto dto)
         {
-            throw new NotImplementedException();
+            var entity = _mapper.Map<InvoiceIssuer>(dto);
+            var response = await _invoiceIssuerRepository.Update(entity);
+
+            return _mapper.Map<InvoiceIssuerDto>(response);
         }
     }
 }

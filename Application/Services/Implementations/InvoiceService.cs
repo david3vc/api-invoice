@@ -106,8 +106,36 @@ namespace Application.Services.Implementations
 
         public async Task<InvoiceDto?> Update(InvoiceDto dto)
         {
-            var entity = _mapper.Map<Invoice>(dto);
-            var response = await _invoiceRepository.Update(entity);
+            var invoice = await _invoiceRepository.Find(dto.Id);
+
+            if (invoice == null) throw new Exception("Invoice not found");
+
+            if(dto.InvoiceIssuer != null)
+            {
+                var invoiceIssuer = await _invoiceIssuerService.Update(dto.InvoiceIssuer);
+                invoice.IdInvoiceIssuer = invoiceIssuer?.Id;
+            }
+
+            if(dto.Subject != null)
+            {
+                var subject = await _subjectService.Update(dto.Subject);
+                invoice.IdSubject = subject?.Id;
+            }
+
+            if(dto.InvoiceItems?.Count > 0) 
+            {
+                foreach(var item in dto.InvoiceItems)
+                {
+                    await _invoiceItemService.Update(item);
+                }
+            }
+
+            invoice.ProjectDescription = dto.ProjectDescription;
+            invoice.InvoiceDate = dto.InvoiceDate;
+            invoice.IdPaymentTerm = dto.PaymentTerm != null ? dto.PaymentTerm.Id : null;
+            invoice.IdInvoiceStatus = dto.InvoiceStatus != null ? dto.InvoiceStatus.Id : null;
+
+            var response = await _invoiceRepository.Update(invoice);
 
             return _mapper.Map<InvoiceDto>(response);
         }

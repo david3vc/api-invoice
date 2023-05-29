@@ -4,7 +4,6 @@
     "\\Application",
     "\\Application\\Services",
     "\\Application\\Services\\Implementations",
-    "\\INVOICECRUD",
     "\\INVOICECRUD\\Controllers"
   ],
   "SelectedNode": "\\Application\\Services\\Implementations\\UsuarioService.cs",

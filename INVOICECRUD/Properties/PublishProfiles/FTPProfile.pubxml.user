@@ -7,15 +7,15 @@ https://go.microsoft.com/fwlink/?LinkID=208121.
     <TimeStampOfAssociatedLegacyPublishXmlFile />
     <EncryptedPassword>AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAfLvIFIfHZE+ADWXvfk+exAAAAAACAAAAAAAQZgAAAAEAACAAAAAGR3uzd93Beje44Ya3O5tqWiZnkcc9VXZUYrXfZHSsdQAAAAAOgAAAAAIAACAAAACJ5wcNhw59i02l769pojL3DEHuQnH2GLSyU9if6LOL9jAAAAA25DBiuQrXoUF1hm28LOzuaSwJDTBKynJHY+ylAlHVeH/aBMvZSVG0iqcgHGG3yllAAAAAZdBH9bEKFRg7f//0QYR++yfRuhnlW1L0lc/O7x8HVaPrmV+dqXea/FvCxZdXqaJBH0ZSgZAXqGnyr6JDApYBtw==</EncryptedPassword>
     <_PublishTargetUrl>ftp://155.254.244.39/www.crudinvoice.somee.com</_PublishTargetUrl>
-    <History>True|2023-05-22T22:44:46.5974330Z;True|2023-05-22T14:22:55.5325364-05:00;True|2023-05-11T09:35:11.8402218-05:00;True|2023-05-08T20:31:47.2595103-05:00;False|2023-05-08T20:29:39.0799152-05:00;True|2023-05-08T20:19:39.0910295-05:00;</History>
+    <History>True|2023-05-29T06:09:11.6228868Z;True|2023-05-28T21:44:01.7938145-05:00;True|2023-05-28T11:39:02.9551364-05:00;True|2023-05-22T17:44:46.5974330-05:00;True|2023-05-22T14:22:55.5325364-05:00;True|2023-05-11T09:35:11.8402218-05:00;True|2023-05-08T20:31:47.2595103-05:00;False|2023-05-08T20:29:39.0799152-05:00;True|2023-05-08T20:19:39.0910295-05:00;</History>
     <LastFailureDetails />
   </PropertyGroup>
   <ItemGroup>
     <File Include="Application.dll">
-      <publishTime>05/22/2023 14:19:10</publishTime>
+      <publishTime>05/29/2023 01:04:47</publishTime>
     </File>
     <File Include="Application.pdb">
-      <publishTime>05/22/2023 14:19:10</publishTime>
+      <publishTime>05/29/2023 01:04:47</publishTime>
     </File>
     <File Include="appsettings.Development.json">
       <publishTime>05/08/2023 18:22:41</publishTime>
@@ -48,28 +48,28 @@ https://go.microsoft.com/fwlink/?LinkID=208121.
       <publishTime>05/22/2023 14:19:06</publishTime>
     </File>
     <File Include="Domain.dll">
-      <publishTime>05/22/2023 14:19:06</publishTime>
+      <publishTime>05/28/2023 11:35:06</publishTime>
     </File>
     <File Include="Domain.pdb">
-      <publishTime>05/22/2023 14:19:06</publishTime>
+      <publishTime>05/28/2023 11:35:06</publishTime>
     </File>
     <File Include="Infraestructure.dll">
-      <publishTime>05/22/2023 14:19:09</publishTime>
+      <publishTime>05/28/2023 21:40:20</publishTime>
     </File>
     <File Include="Infraestructure.pdb">
-      <publishTime>05/22/2023 14:19:09</publishTime>
+      <publishTime>05/28/2023 21:40:20</publishTime>
     </File>
     <File Include="INVOICECRUD.deps.json">
-      <publishTime>05/22/2023 17:41:14</publishTime>
+      <publishTime>05/29/2023 01:05:00</publishTime>
     </File>
     <File Include="INVOICECRUD.dll">
-      <publishTime>05/22/2023 17:41:12</publishTime>
+      <publishTime>05/29/2023 01:04:58</publishTime>
     </File>
     <File Include="INVOICECRUD.exe">
-      <publishTime>05/22/2023 17:41:12</publishTime>
+      <publishTime>05/29/2023 01:04:58</publishTime>
     </File>
     <File Include="INVOICECRUD.pdb">
-      <publishTime>05/22/2023 17:41:12</publishTime>
+      <publishTime>05/29/2023 01:04:58</publishTime>
     </File>
     <File Include="INVOICECRUD.runtimeconfig.json">
       <publishTime>05/22/2023 14:19:14</publishTime>
@@ -237,7 +237,7 @@ https://go.microsoft.com/fwlink/?LinkID=208121.
       <publishTime>10/19/2020 13:53:38</publishTime>
     </File>
     <File Include="web.config">
-      <publishTime>05/22/2023 17:41:16</publishTime>
+      <publishTime>05/29/2023 01:05:02</publishTime>
     </File>
   </ItemGroup>
 </Project>
