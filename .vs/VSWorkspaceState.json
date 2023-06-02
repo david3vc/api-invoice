@@ -4,8 +4,12 @@
     "\\Application",
     "\\Application\\Services",
     "\\Application\\Services\\Implementations",
+    "\\Infraestructure",
+    "\\Infraestructure\\Repositories",
+    "\\Infraestructure\\Repositories\\Implementations",
+    "\\INVOICECRUD",
     "\\INVOICECRUD\\Controllers"
   ],
-  "SelectedNode": "\\Application\\Services\\Implementations\\UsuarioService.cs",
+  "SelectedNode": "\\INVOICECRUD.sln",
   "PreviewInSolutionExplorer": false
 }

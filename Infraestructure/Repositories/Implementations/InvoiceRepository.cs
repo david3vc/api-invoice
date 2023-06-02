@@ -44,7 +44,7 @@ namespace Infraestructure.Repositories.Implementations
 
         public async Task<Invoice?> Find(int id)
             => await _context.Invoices.Include(f => f.InvoiceStatus)
-                                      .Include(f => f.InvoiceItems)
+                                      .Include(f => f.InvoiceItems.Where(g => g.Status == 1))
                                       .Include(f => f.Subject)
                                       .Include(f => f.PaymentTerm)
                                       .Include(f => f.InvoiceIssuer)
@@ -53,15 +53,18 @@ namespace Infraestructure.Repositories.Implementations
         public async Task<IList<Invoice>> FindAll()
             => await _context.Invoices.Where(f => f.Status == 1).ToListAsync();
 
-        public async Task<List<Invoice>> ListarInvoicesPorUsuario(int? idUsuario, int? status)
+        public async Task<List<Invoice>> ListarInvoicesPorUsuario(InvoicePeticion request)
         {
             var response = await _context.Invoices.Include(f => f.InvoiceStatus)
                                                   .Include(f => f.InvoiceItems)
                                                   .Include(f => f.Subject)
                                                   .Include(f => f.InvoiceIssuer)
                                                   .Include(f => f.PaymentTerm)
-                                                  .Where(f => (!idUsuario.HasValue || f.IdUsuario == idUsuario)
-                                                            && (!status.HasValue || f.Status == status))
+                                                  .Where(f => (!request.IdUsuario.HasValue || f.IdUsuario == request.IdUsuario)
+                                                            && (!request.Paid.HasValue || f.IdInvoiceStatus == request.Paid)
+                                                            && (!request.Pending.HasValue || f.IdInvoiceStatus == request.Pending)
+                                                            && (!request.Draft.HasValue || f.IdInvoiceStatus == request.Draft)
+                                                            && (f.Status == 1))
                                                   .ToListAsync();
 
             return response;

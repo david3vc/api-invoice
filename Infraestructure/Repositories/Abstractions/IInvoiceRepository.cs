@@ -10,6 +10,6 @@ namespace Infraestructure.Repositories.Abstractions
 {
     public interface IInvoiceRepository : IRepositoryCrud<Invoice, int> 
     {
-        Task<List<Invoice>> ListarInvoicesPorUsuario(int? idUsuario, int? status);
+        Task<List<Invoice>> ListarInvoicesPorUsuario(InvoicePeticion request);
     }
 }

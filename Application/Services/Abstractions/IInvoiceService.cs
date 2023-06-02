@@ -10,6 +10,7 @@ namespace Application.Services.Abstractions
 {
     public interface IInvoiceService : IServiceCrud<InvoiceDto, InvoiceFormDto, int> 
     {
-        Task<List<InvoiceDto>> ListarInvoicesPorUsuario(int? idUsuario, int? status);
+        Task<List<InvoiceDto>> ListarInvoicesPorUsuario(InvoicePeticionDto request);
+        Task<InvoiceDto> MarkAsPaid(int id);
     }
 }

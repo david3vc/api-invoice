@@ -13,6 +13,7 @@ namespace Application.Dtos.Maps
         public InvoiceItemFormProfile()
         {
             CreateMap<InvoiceItem, InvoiceItemFormDto>().ReverseMap();
+            CreateMap<InvoiceItemDto, InvoiceItemFormDto>().ReverseMap();
         }
     }
 }

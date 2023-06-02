@@ -97,11 +97,24 @@ namespace Application.Services.Implementations
             return _mapper.Map<IList<InvoiceDto>>(response);
         }
 
-        public async Task<List<InvoiceDto>> ListarInvoicesPorUsuario(int? idUsuario, int? status)
+        public async Task<List<InvoiceDto>> ListarInvoicesPorUsuario(InvoicePeticionDto request)
         {
-            var response = await _invoiceRepository.ListarInvoicesPorUsuario(idUsuario, status);
+            var entityRequest = _mapper.Map<InvoicePeticion>(request);
+            var response = await _invoiceRepository.ListarInvoicesPorUsuario(entityRequest);
 
             return _mapper.Map<List<InvoiceDto>>(response);
+        }
+
+        public async Task<InvoiceDto> MarkAsPaid(int id)
+        {
+            var invoice = await _invoiceRepository.Find(id);
+
+            if (invoice == null) throw new Exception("Invoice not found");
+
+            invoice.IdInvoiceStatus = 1;
+
+            var response = await _invoiceRepository.Update(invoice);
+            return _mapper.Map<InvoiceDto>(response);
         }
 
         public async Task<InvoiceDto?> Update(InvoiceDto dto)
@@ -126,7 +139,14 @@ namespace Application.Services.Implementations
             {
                 foreach(var item in dto.InvoiceItems)
                 {
-                    await _invoiceItemService.Update(item);
+                    if (item?.Id != null && item.Id != 0)
+                        await _invoiceItemService.Update(item);
+                    else
+                    {
+                        var itemForm = _mapper.Map<InvoiceItemFormDto>(item);
+                        itemForm.IdInvoice = dto.Id;
+                        await _invoiceItemService.Create(itemForm);
+                    }
                 }
             }
 

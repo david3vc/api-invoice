@@ -11,9 +11,21 @@ using Microsoft.OpenApi.Models;
 using System.Reflection;
 using System.Text;
 
+//var MyAllowSpecificOrigins = "_myAllowSpecificOrigins";
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
+
+//builder.Services.AddCors(options =>
+//{
+//    options.AddPolicy(MyAllowSpecificOrigins,
+//                            policy =>
+//                            {
+//                                policy.WithOrigins("https://invoice-app-three-murex.vercel.app")
+//                                        .AllowAnyHeader()
+//                                        .AllowAnyMethod();
+//                            });
+//});
 
 builder.Services.AddControllers();
 //builder.Services.AddControllers(options =>
@@ -105,6 +117,7 @@ app.UseSwagger();
 app.UseSwaggerUI();
 
 ////app.UseHttpsRedirection();
+
 app.UseCors(options =>
 {
     options.AllowAnyHeader()
@@ -112,6 +125,7 @@ app.UseCors(options =>
     .AllowAnyMethod()
     .Build();
 });
+//app.UseCors(MyAllowSpecificOrigins);
 
 app.UseAuthorization();
 
